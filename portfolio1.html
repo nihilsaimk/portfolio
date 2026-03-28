@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NIHIL SAI MK | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="container nav-container">
+      <div class="logo">NIHIL SAI MK</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="about">
+    <div class="hero-container">
+      <h1>Hi, I’m NIHIL SAI MK</h1>
+      <h2>Student | B.Tech ECE</h2>
+      <p>I’m an Electronics and Communication Engineering student with a growing passion for web development and technology. I enjoy building projects, learning new tools, and improving my problem-solving skills.</p>
+      <div class="social-icons">
+        <a href="mailto:nihilnk71@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://github.com/nihilsaimk" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/linknihil" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skill">
+        <p>HTML & CSS (Basics)</p>
+        <div class="skill-bar"><span style="width:80%"></span></div>
+      </div>
+      <div class="skill">
+        <p>JavaScript (Learning)</p>
+        <div class="skill-bar"><span style="width:50%"></span></div>
+      </div>
+      <div class="skill">
+        <p>C / Python (Basics)</p>
+        <div class="skill-bar"><span style="width:60%"></span></div>
+      </div>
+      <div class="skill">
+        <p>Figma (UI/UX)</p>
+        <div class="skill-bar"><span style="width:70%"></span></div>
+      </div>
+      <div class="skill">
+        <p>Git & GitHub (Beginner)</p>
+        <div class="skill-bar"><span style="width:50%"></span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-img">
+            <img src="https://via.placeholder.com/400x200?text=Learning+App" alt="Learning App">
+          </div>
+          <div class="project-content">
+            <h3>Learning App</h3>
+            <p>A web application designed to help users access webinars and job resources efficiently, providing organized content for better learning and career growth.</p>
+            <a href="#" class="btn">View Project</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img">
+            <img src="https://via.placeholder.com/400x200?text=AgriHelper" alt="AgriHelper">
+          </div>
+          <div class="project-content">
+            <h3>AgriHelper</h3>
+            <p>AgriHelper is a conceptual app designed to assist farmers with crop selection, market prices, and agricultural tips through a simple, user-friendly interface.</p>
+            <a href="#" class="btn">View Project</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <div class="contact-grid">
+        <div class="contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <p><a href="mailto:nihilnk71@gmail.com">nihilnk71@gmail.com</a></p>
+        </div>
+        <div class="contact-item">
+          <i class="fa-brands fa-github"></i>
+          <p><a href="https://github.com/nihilsaimk" target="_blank">github.com/nihilsaimk</a></p>
+        </div>
+        <div class="contact-item">
+          <i class="fa-brands fa-linkedin"></i>
+          <p><a href="https://www.linkedin.com/in/linknihil" target="_blank">linkedin.com/in/linknihil</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 NIHIL SAI MK. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Smooth scroll for nav links
+    document.querySelectorAll('nav ul li a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
